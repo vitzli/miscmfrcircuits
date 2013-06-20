@@ -1,4 +1,4 @@
-package vitzli.miscmfrcircuits.circuits;
+package vitzli.miscmfrcircuits.circuits.bus;
 
 import net.minecraft.nbt.NBTTagCompound;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;

@@ -2,16 +2,18 @@
     {
         "name": "Misc MFR circuits", 
         "parent": "", 
-        "url": "http://www.minecraftforum.net/topic/1629898-", 
+        "url": "http://www.minecraftforum.net/topic/1854900-", 
         "logoFile": "", 
         "updateUrl": "", 
         "credits": "powercrystals",
-        "version": "0.0.0.2", 
+        "version": "0.0.0.3", 
         "modid": "MiscMFRcircuits", 
-        "authors": ["Vitzli"], 
+        "authors": [
+            "Vitzli"
+        ], 
         "mcversion": "1.5.2", 
         "screenshots": [], 
         "dependencies": [], 
         "description": "misc ICs"
-    }
+    }, 
 ]

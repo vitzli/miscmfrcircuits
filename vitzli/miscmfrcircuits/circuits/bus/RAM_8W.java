@@ -1,6 +1,6 @@
-package vitzli.miscmfrcircuits.circuits;
+package vitzli.miscmfrcircuits.circuits.bus;
 
-import vitzli.miscmfrcircuits.circuits.RAMcircuit;
+import vitzli.miscmfrcircuits.circuits.bus.RAMcircuit;
 
 public class RAM_8W extends RAMcircuit{
 

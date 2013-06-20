@@ -1,6 +1,8 @@
-package vitzli.miscmfrcircuits.circuits;
+package vitzli.miscmfrcircuits.circuits.bus;
 
+import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
+
 
 public class Encoder32bit_4by8bit extends StatelessCircuit {
 	

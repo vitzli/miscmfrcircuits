@@ -1,0 +1,40 @@
+package vitzli.miscmfrcircuits.circuits.analog;
+
+import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
+import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
+
+public class Adder8 extends StatelessCircuit implements IRedNetLogicCircuit {
+
+	@Override
+	public int getInputCount() {
+		return 8;
+	}
+
+	@Override
+	public int getOutputCount() {
+		return 1;
+	}
+
+	@Override
+	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
+		return new int[] { inputValues[0] + inputValues[1] + inputValues[2]
+				+ inputValues[3] + inputValues[4] + inputValues[5]
+				+ inputValues[6] + inputValues[7] };
+	}
+
+	@Override
+	public String getUnlocalizedName() {
+		return "miscICs.analog.Adder8";
+	}
+
+	@Override
+	public String getInputPinLabel(int pin) {
+		return "X" + pin;
+	}
+
+	@Override
+	public String getOutputPinLabel(int pin) {
+		return "RSLT";
+	}
+
+}
