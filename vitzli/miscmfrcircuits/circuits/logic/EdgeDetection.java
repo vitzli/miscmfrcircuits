@@ -9,7 +9,11 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
  */
 public class EdgeDetection implements IRedNetLogicCircuit {
 
-	private boolean lastState;
+	private boolean lastState = false;
+	private boolean currentState = false;
+	
+	private int rEdge;
+	private int fEdge;
 
 	@Override
 	public int getInputCount() {
@@ -23,8 +27,7 @@ public class EdgeDetection implements IRedNetLogicCircuit {
 
 	@Override
 	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
-		int rEdge, fEdge;
-		boolean currentState = (inputValues[0] != 0);
+		currentState = (inputValues[0] != 0);
 
 		if (currentState ^ lastState) {
 			rEdge = currentState ? 15 : 0;
@@ -54,13 +57,13 @@ public class EdgeDetection implements IRedNetLogicCircuit {
 
 	@Override
 	public void readFromNBT(NBTTagCompound tag) {
-		// TODO Auto-generated method stub
+		lastState = tag.getBoolean("lastState");
 		
 	}
 
 	@Override
 	public void writeToNBT(NBTTagCompound tag) {
-		// TODO Auto-generated method stub
+		tag.setBoolean("lastState", lastState);
 		
 	}
 

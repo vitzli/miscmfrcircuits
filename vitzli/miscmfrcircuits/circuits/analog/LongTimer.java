@@ -26,9 +26,9 @@ import vitzli.miscmfrcircuits.lib.ValueFunctions;
 
 public class LongTimer implements IRedNetLogicCircuit {
 
-	private String[] inputPinNames = new String[] { "Ts", "Tm", "Th", "DC",
+	private static final String[] inputPinNames = new String[] { "Ts", "Tm", "Th", "DC",
 			"EN#", "RST" };
-	private String[] outputPinNames = new String[] { "Q", "Qs", "Qm", "Qh" };
+	private static final String[] outputPinNames = new String[] { "Q", "Qs", "Qm", "Qh" };
 
 	private int Ts = 0, // values from interface, 1..255
 			Tm = 0, // 0..255

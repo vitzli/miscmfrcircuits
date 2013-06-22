@@ -5,11 +5,16 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
 
 public class Average implements IRedNetLogicCircuit {
-
-	private long clockCount = 0;
+	
 	private boolean lastClockState = false;
+	private boolean clockState = false;
+	
 	private long sum = 0;
+	private long clockCount = 0;
+	
 	private int avg = 0;
+	private int signalInput = 0;
+	
 
 	@Override
 	public int getInputCount() {
@@ -23,9 +28,9 @@ public class Average implements IRedNetLogicCircuit {
 
 	@Override
 	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
-		int signalInput = ValueFunctions.ConstraintInt(inputValues[0], 1,
+		signalInput = ValueFunctions.ConstraintInt(inputValues[0], 1,
 				1<<16);
-		boolean clockState;
+		
 		clockState = inputValues[2] != 0;
 
 		if (clockState && !lastClockState) {

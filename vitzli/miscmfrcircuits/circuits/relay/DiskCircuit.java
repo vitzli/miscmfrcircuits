@@ -14,7 +14,7 @@ public class DiskCircuit implements IRedNetLogicCircuit {
 		public int Ki = 1;
 		public float L2Setting = 1.0f;
 		public boolean enabledState = false;
-
+		
 		public RelayInteg(String name_handle) {
 			super(name_handle);
 		}
@@ -62,6 +62,11 @@ public class DiskCircuit implements IRedNetLogicCircuit {
 	}
 
 	private RelayInteg relay = new RelayInteg("relay.induction");
+	
+	private final String[] inputNames = new String[] { "I", "I1p", "I1i",
+			"I1k", "I2", "EN#" };
+	private final String[] outputNames = new String[] { "TR", "ST", "TR#",
+			"ST#" };
 
 	@Override
 	public int getInputCount() {
@@ -109,14 +114,11 @@ public class DiskCircuit implements IRedNetLogicCircuit {
 
 	@Override
 	public String getInputPinLabel(int pin) {
-		String[] inputNames = new String[] { "I", "I1p", "I1i", "I1k", "I2",
-				"EN#" };
 		return inputNames[pin];
 	}
 
 	@Override
 	public String getOutputPinLabel(int pin) {
-		String[] outputNames = new String[] { "TR", "ST", "TR#", "ST#" };
 		return outputNames[pin];
 	}
 

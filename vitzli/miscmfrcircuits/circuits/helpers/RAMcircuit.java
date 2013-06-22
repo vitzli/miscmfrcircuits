@@ -1,4 +1,4 @@
-package vitzli.miscmfrcircuits.circuits.bus;
+package vitzli.miscmfrcircuits.circuits.helpers;
 
 import net.minecraft.nbt.NBTTagCompound;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
@@ -11,13 +11,16 @@ public class RAMcircuit implements IRedNetLogicCircuit {
 	protected RAMdata RAM;
 
 	private boolean lastClockState = false;
-	private String[] InputPinNames = new String[] { "D", "ADR", "WR", "CLK",
+	private static final String[] InputPinNames = new String[] { "D", "ADR", "WR", "CLK",
 			"RST" };
 
 	public void initSize(int memsize) {
 		this.ramsize = memsize;
 		this.RAM = new RAMdata(memsize);
 	}
+	
+	private int addr;
+	private boolean writeState, clockState, resetState;
 
 	@Override
 	public int getInputCount() {
@@ -31,12 +34,12 @@ public class RAMcircuit implements IRedNetLogicCircuit {
 
 	@Override
 	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
-		int addr = ValueFunctions.ConstraintInt(inputValues[1], 0,
+		addr = ValueFunctions.ConstraintInt(inputValues[1], 0,
 				this.ramsize - 1); // ADDR
 
-		boolean writeState = inputValues[2] != 0; // WR
-		boolean clockState = inputValues[3] != 0; // CLK
-		boolean resetState = inputValues[4] != 0; // RST
+		writeState = inputValues[2] != 0; // WR
+		clockState = inputValues[3] != 0; // CLK
+		resetState = inputValues[4] != 0; // RST
 
 		if (!this.lastClockState && clockState) {
 			if (resetState) {

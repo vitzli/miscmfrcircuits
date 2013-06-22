@@ -17,10 +17,10 @@ public class DAC extends StatelessCircuit {
 	@Override
 	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
 		int result = 0;
-		for (int i=0; i<16; i++) {
+		for (int i = 0; i < 16; i++) {
 			result += inputValues[i] != 0 ? (1 << i) : 0;
 		}
-		return new int[] {result};
+		return new int[] { result };
 	}
 
 	@Override
@@ -30,12 +30,12 @@ public class DAC extends StatelessCircuit {
 
 	@Override
 	public String getInputPinLabel(int pin) {
-		return "A"+pin;
+		return "A" + pin;
 	}
 
 	@Override
 	public String getOutputPinLabel(int pin) {
-		return "Y"+pin;
+		return "Y" + pin;
 	}
 
 }

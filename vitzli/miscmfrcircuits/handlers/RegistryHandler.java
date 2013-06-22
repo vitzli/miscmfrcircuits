@@ -82,9 +82,7 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new RAM_1W());
 		FarmingRegistry.registerRedNetLogicCircuit(new RAM_8W());
 		FarmingRegistry.registerRedNetLogicCircuit(new RAM_16W());
-		
-		
-		
+
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.and2",
 				"miscIC: AND2 (32bit bus)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.or2",
@@ -128,8 +126,6 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new QuadOR2());
 		FarmingRegistry.registerRedNetLogicCircuit(new QuadXOR2());
 
-		
-		
 		LanguageRegistry.instance().addStringLocalization(
 				"miscICs.logic.edgedetector", "miscIC: Edge detector");
 		LanguageRegistry.instance().addStringLocalization(
@@ -146,9 +142,7 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new MaxDTcircuit());
 		FarmingRegistry.registerRedNetLogicCircuit(new MinDTcircuit());
 		FarmingRegistry.registerRedNetLogicCircuit(new DiskCircuit());
-		
-		
-		
+
 		LanguageRegistry.instance().addStringLocalization(
 				"miscICs.relay.max_dt", "miscIC: Max Relay (DT)");
 		LanguageRegistry.instance().addStringLocalization(
