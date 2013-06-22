@@ -19,4 +19,19 @@ public class ValueFunctions {
 			return n;
 		}
 	}
+	
+	
+	public static boolean hysteresisCheck(int PV, int onSP, int offSP, boolean isRising) {
+		if (PV < offSP) {
+			return false;
+		} else if (PV >= offSP && PV <= onSP) {
+			return !isRising;
+		} else {
+			return true;
+		}
+	}
+	
+	public static boolean isSignalRising(int currentValue, int lastValue) {
+		return currentValue > lastValue;
+	}
 }
