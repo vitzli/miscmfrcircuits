@@ -1,6 +1,7 @@
-package vitzli.miscmfrcircuits.circuits;
+package vitzli.miscmfrcircuits.circuits.logicboolean;
 
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
+import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
 
 public class BarGraph extends StatelessCircuit implements IRedNetLogicCircuit {

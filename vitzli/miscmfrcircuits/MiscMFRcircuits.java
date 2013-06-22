@@ -3,6 +3,7 @@ package vitzli.miscmfrcircuits;
 // MiscMFRcircuits
 
 import java.util.logging.Logger;
+import java.util.logging.Level;
 
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.FMLLog;
@@ -21,31 +22,37 @@ import vitzli.miscmfrcircuits.handlers.RegistryHandler;
 
 @Mod(modid = MiscMFRcircuits.modID, name = MiscMFRcircuits.modName, version = MiscMFRcircuits.version, dependencies = "required-after:MineFactoryReloaded")
 @NetworkMod(clientSideRequired = true)
-
 public class MiscMFRcircuits {
-    public static final String modID = "MiscMFRcircuits";
-    public static final String modName = "Misc MFR circuits";
-    public static final String version = "0.0.0.2";
-    
-    @Instance(modID)
-    public static MiscMFRcircuits instance;
-    
-    public static Logger log;
-    
-    @PreInit
-    public void preInit(FMLPreInitializationEvent event) {
-        
-    }
-    
-    @Init
-    public void Init(FMLInitializationEvent event) {
-        RegistryHandler.InitRedNetRegistry();
-        RegistryHandler.InitLanguageRegistry();
-    }
-    
-    @PostInit
-    public void PostInit(FMLPostInitializationEvent event) {
-        
-    }
-    
+	public static final String modID = "MiscMFRcircuits";
+	public static final String modName = "Misc MFR circuits";
+	public static final String version = "0.0.0.4";
+
+	@Instance(modID)
+	public static MiscMFRcircuits instance;
+
+	public static Logger log = Logger.getLogger(MiscMFRcircuits.modID);
+
+	@PreInit
+	public void preInit(FMLPreInitializationEvent event) {
+		log.setParent(FMLLog.getLogger());
+	}
+
+	@Init
+	public void Init(FMLInitializationEvent event) {
+		log.log(Level.INFO, "miscIC here. Registering all my circuits");
+
+		try {
+			RegistryHandler.InitRedNetRegistry();
+		} catch (Exception x) {
+			log.log(Level.SEVERE,
+					"miscIC here. I cannot do my job and now I'm sad");
+			x.printStackTrace();
+		}
+	}
+
+	@PostInit
+	public void PostInit(FMLPostInitializationEvent event) {
+
+	}
+
 }

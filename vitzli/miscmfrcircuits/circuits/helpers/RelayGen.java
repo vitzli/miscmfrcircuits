@@ -1,4 +1,4 @@
-package vitzli.miscmfrcircuits.circuits.relay;
+package vitzli.miscmfrcircuits.circuits.helpers;
 
 public class RelayGen {
 

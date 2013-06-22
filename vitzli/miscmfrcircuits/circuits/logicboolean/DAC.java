@@ -1,4 +1,6 @@
-package vitzli.miscmfrcircuits.circuits;
+package vitzli.miscmfrcircuits.circuits.logicboolean;
+
+import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
 
 public class DAC extends StatelessCircuit {
 

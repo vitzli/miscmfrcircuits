@@ -2,6 +2,7 @@ package vitzli.miscmfrcircuits.circuits.relay;
 
 import net.minecraft.nbt.NBTTagCompound;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
+import vitzli.miscmfrcircuits.circuits.helpers.RelayGen;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
 
 public class DiskCircuit implements IRedNetLogicCircuit {
