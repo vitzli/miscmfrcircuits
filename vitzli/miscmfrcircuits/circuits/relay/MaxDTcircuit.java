@@ -2,7 +2,7 @@ package vitzli.miscmfrcircuits.circuits.relay;
 
 import net.minecraft.nbt.NBTTagCompound;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
-import vitzli.miscmfrcircuits.circuits.helpers.RelayDT;
+import vitzli.miscmfrcircuits.circuits.base.RelayDT;
 
 // import vitzli.miscmfrcircuits.lib.CircuitFunctions;
 

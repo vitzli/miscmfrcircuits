@@ -1,6 +1,6 @@
 package vitzli.miscmfrcircuits.circuits.logicboolean;
 
-import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
+import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 import vitzli.miscmfrcircuits.lib.CircuitFunctions;
 
 public class ADC extends StatelessCircuit {

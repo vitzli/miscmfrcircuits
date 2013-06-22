@@ -1,6 +1,6 @@
 package vitzli.miscmfrcircuits.circuits.bus;
 
-import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
+import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
 public class Decoder32bit_4by8bit extends StatelessCircuit {
 

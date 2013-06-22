@@ -1,6 +1,6 @@
 package vitzli.miscmfrcircuits.circuits.bus;
 
-import vitzli.miscmfrcircuits.circuits.helpers.RAMcircuit;
+import vitzli.miscmfrcircuits.circuits.base.RAMcircuit;
 
 public class RAM_16W extends RAMcircuit {
 	

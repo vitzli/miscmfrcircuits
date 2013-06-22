@@ -1,4 +1,4 @@
-package vitzli.miscmfrcircuits.circuits.helpers;
+package vitzli.miscmfrcircuits.circuits.base;
 
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
 

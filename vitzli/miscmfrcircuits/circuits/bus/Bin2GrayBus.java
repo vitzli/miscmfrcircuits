@@ -1,7 +1,7 @@
 package vitzli.miscmfrcircuits.circuits.bus;
 
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
-import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
+import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
 public class Bin2GrayBus extends StatelessCircuit implements
 		IRedNetLogicCircuit {

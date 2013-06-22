@@ -1,7 +1,7 @@
 package vitzli.miscmfrcircuits.circuits.analog;
 
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
-import vitzli.miscmfrcircuits.circuits.StatelessCircuit;
+import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
 public class QuadAdder2 extends StatelessCircuit implements IRedNetLogicCircuit {
 
