@@ -6,7 +6,7 @@
         "logoFile": "", 
         "updateUrl": "", 
         "credits": "powercrystals",
-        "version": "0.0.0.3", 
+        "version": "0.0.0.4", 
         "modid": "MiscMFRcircuits", 
         "authors": [
             "Vitzli"
@@ -15,5 +15,5 @@
         "screenshots": [], 
         "dependencies": [], 
         "description": "misc ICs"
-    }, 
+    }
 ]

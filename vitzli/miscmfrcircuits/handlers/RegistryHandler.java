@@ -28,15 +28,15 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new LongTimer());
 		// -- analog
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.analog.Adder8", "miscIC: Adder (8 in, analog)");
+				"miscICs.analog.Adder8", "miscIC:A: Adder (8 in)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.analog.average", "miscIC: Average (analog)");
+				"miscICs.analog.average", "miscIC:A: Average");
 		LanguageRegistry.instance().addStringLocalization(
 				"miscICs.analog.QuadAdder2",
-				"miscIC: Quad Adder (2 in, analog)");
+				"miscIC:A: Quad Adder (4*2 in)");
 		LanguageRegistry.instance().addStringLocalization(
 				"miscIC.analog.looongtimer",
-				"miscIC: Long timer (is looong, analog)");
+				"miscIC:A: Long timer (is looong, analog)");
 	}
 
 	private static void RegisterLogicBooleanCircuits() {
@@ -46,13 +46,13 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new ThresholdDetector());
 
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.decoder16.ADC", "miscIC: ADC");
+				"miscICs.decoder16.ADC", "miscIC:LB: ADC");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.encoder16.DAC", "miscIC: DAC");
+				"miscICs.encoder16.DAC", "miscIC:LB: DAC");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.decoder.bargraph", "miscIC: Bargraph");
+				"miscICs.decoder.bargraph", "miscIC:LB: Bargraph");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.logicboolean.hysteresis", "miscIC: Hysteresis thres.");
+				"miscICs.logicboolean.hysteresis", "miscIC:LB: Hysteresis thres.");
 
 	}
 
@@ -84,39 +84,39 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new RAM_16W());
 
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.and2",
-				"miscIC: AND2 (32bit bus)");
+				"miscIC:B: AND2 (32bit bus)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.or2",
-				"miscIC: OR2 (32bit bus)");
+				"miscIC:B: OR2 (32bit bus)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.xor2",
-				"miscIC: XOR2 (32bit bus)");
+				"miscIC:B: XOR2 (32bit bus)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.not",
-				"miscIC: NOT (32bit bus)");
+				"miscIC:B: NOT (32bit bus)");
 
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.bus.bin2gray", "miscIC: Bin2Gray (32bit bus)");
+				"miscICs.bus.bin2gray", "miscIC:B: Bin2Gray (32bit bus)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.gr2bin",
-				"miscIC: Gray2Bin (32bit bus)");
+				"miscIC:B: Gray2Bin (32bit bus)");
 
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.decoder32.2by16bit", "miscIC: Dec 2*16bit(bus)");
+				"miscICs.decoder32.2by16bit", "miscIC:B: Dec 2*16bit(bus)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.decoder32.4by8bit", "miscIC: Dec 4*8bit(bus)");
+				"miscICs.decoder32.4by8bit", "miscIC:B: Dec 4*8bit(bus)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.decoder32.8by4bit", "miscIC: Dec 8*4bit(bus)");
+				"miscICs.decoder32.8by4bit", "miscIC:B: Dec 8*4bit(bus)");
 
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.encoder32.2by16bit", "miscIC: Enc 2*16bit");
+				"miscICs.encoder32.2by16bit", "miscIC:B: Enc 2*16bit");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.encoder32.4by8bit", "miscIC: Enc 4*8bit");
+				"miscICs.encoder32.4by8bit", "miscIC:B: Enc 4*8bit");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.encoder32.8by4bit", "miscIC: Enc 8*4bit");
+				"miscICs.encoder32.8by4bit", "miscIC:B: Enc 8*4bit");
 
 		LanguageRegistry.instance().addStringLocalization("miscICs.RAM.1W",
-				"miscIC: RAM 1W (32bit)");
+				"miscIC:B: RAM 1W (32bit)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.RAM.8W",
-				"miscIC: RAM 8W (32bit)");
+				"miscIC:B: RAM 8W (32bit)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.RAM.16W",
-				"miscIC: RAM 16W (32bit)");
+				"miscIC:B: RAM 16W (32bit)");
 	}
 
 	private static void RegisterLogicCircuits() {
@@ -126,16 +126,36 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new QuadOR2());
 		FarmingRegistry.registerRedNetLogicCircuit(new QuadXOR2());
 
+		FarmingRegistry.registerRedNetLogicCircuit(new AllTheSame());
+		FarmingRegistry.registerRedNetLogicCircuit(new Even());
+		FarmingRegistry.registerRedNetLogicCircuit(new LogicThreshold());
+		FarmingRegistry.registerRedNetLogicCircuit(new NAndOnlyN());
+		FarmingRegistry.registerRedNetLogicCircuit(new Odd());
+		FarmingRegistry.registerRedNetLogicCircuit(new TwoOfThree());
+
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.logic.edgedetector", "miscIC: Edge detector");
+				"miscICs.logic.edgedetector", "miscIC:L: Edge detector");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.logic.quad_and2", "miscIC: Quad AND2 (discrete)");
+				"miscICs.logic.quad_and2", "miscIC:L: Quad AND2 (discrete)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.logic.quad_not", "miscIC: Quad NOT (discrete)");
+				"miscICs.logic.quad_not", "miscIC:L: Quad NOT (discrete)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.logic.quad_or2", "miscIC: Quad OR2 (discrete)");
+				"miscICs.logic.quad_or2", "miscIC:L: Quad OR2 (discrete)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.logic.quad_xor2", "miscIC: Quad XOR2 (discrete)");
+				"miscICs.logic.quad_xor2", "miscIC:L: Quad XOR2 (discrete)");
+
+		LanguageRegistry.instance().addStringLocalization(
+				"miscICs.logic.allthesame", "miscIC:L: All the same");
+		LanguageRegistry.instance().addStringLocalization("miscICs.logic.even",
+				"miscIC:L: Even qty active");
+		LanguageRegistry.instance().addStringLocalization(
+				"miscICs.logic.threshold8", "miscIC:L: At least N active");
+		LanguageRegistry.instance().addStringLocalization(
+				"miscICs.logic.nandonlyn", "miscIC:L: N and only N");
+		LanguageRegistry.instance().addStringLocalization("miscICs.logic.odd",
+				"miscIC:L: Odd qty active");
+		LanguageRegistry.instance().addStringLocalization("miscICs.logic.2of3",
+				"miscIC:L: 2 of 3 active");
 	}
 
 	private static void RegisterRelayCircuits() {
@@ -144,10 +164,10 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new DiskCircuit());
 
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.relay.max_dt", "miscIC: Max Relay (DT)");
+				"miscICs.relay.max_dt", "miscIC:R: Max Relay (DT)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.relay.min_dt", "miscIC: Min Relay (DT)");
+				"miscICs.relay.min_dt", "miscIC:R: Min Relay (DT)");
 		LanguageRegistry.instance().addStringLocalization(
-				"miscICs.relay.induction", "miscIC: Inv time relay");
+				"miscICs.relay.induction", "miscIC:R: Inv time relay");
 	}
 }
