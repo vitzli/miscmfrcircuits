@@ -36,7 +36,7 @@ public class RegistryHandler {
 				"miscIC:A: Quad Adder (4*2 in)");
 		LanguageRegistry.instance().addStringLocalization(
 				"miscIC.analog.looongtimer",
-				"miscIC:A: Long timer (is looong, analog)");
+				"miscIC:A: hr:min:s timer (is looong, analog)");
 	}
 
 	private static void RegisterLogicBooleanCircuits() {

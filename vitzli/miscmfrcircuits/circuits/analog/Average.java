@@ -28,7 +28,7 @@ public class Average implements IRedNetLogicCircuit {
 
 	@Override
 	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
-		signalInput = ValueFunctions.ConstraintInt(inputValues[0], 1,
+		signalInput = ValueFunctions.ConstraintInt(inputValues[0], 0,
 				1<<16);
 		
 		clockState = inputValues[2] != 0;

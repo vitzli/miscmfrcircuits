@@ -50,7 +50,7 @@ public class ThresholdDetector implements IRedNetLogicCircuit {
 
 	@Override
 	public String getInputPinLabel(int pin) {
-		return pin == 0 ? "PV" : pin == 1 ? "sOff" : "sOn";
+		return pin == 0 ? "PV" : pin == 1 ? "S0" : "S1";
 	}
 
 	@Override
