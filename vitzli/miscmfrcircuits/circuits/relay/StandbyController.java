@@ -44,7 +44,7 @@ public class StandbyController implements IRedNetLogicCircuit {
 			timer = 0;
 		}
 		
-		if (mainOk && sbyOk && state && reset) {
+		if (mainOk && state && reset) {
 			state = false;
 			alarm = false;
 		}
