@@ -82,6 +82,7 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new RAM_1W());
 		FarmingRegistry.registerRedNetLogicCircuit(new RAM_8W());
 		FarmingRegistry.registerRedNetLogicCircuit(new RAM_16W());
+		FarmingRegistry.registerRedNetLogicCircuit(new VGAROM());
 
 		LanguageRegistry.instance().addStringLocalization("miscICs.bus.and2",
 				"miscIC:B: AND2 (32bit bus)");
@@ -117,6 +118,10 @@ public class RegistryHandler {
 				"miscIC:B: RAM 8W (32bit)");
 		LanguageRegistry.instance().addStringLocalization("miscICs.RAM.16W",
 				"miscIC:B: RAM 16W (32bit)");
+		
+		LanguageRegistry.instance().addStringLocalization("miscICs.bus.vgarom",
+				"miscIC:B: CG ROM");
+		
 	}
 
 	private static void RegisterLogicCircuits() {
