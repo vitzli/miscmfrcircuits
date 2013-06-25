@@ -137,6 +137,7 @@ public class RegistryHandler {
 		FarmingRegistry.registerRedNetLogicCircuit(new NAndOnlyN());
 		FarmingRegistry.registerRedNetLogicCircuit(new Odd());
 		FarmingRegistry.registerRedNetLogicCircuit(new TwoOfThree());
+		FarmingRegistry.registerRedNetLogicCircuit(new Johnson5stage());
 
 		LanguageRegistry.instance().addStringLocalization(
 				"miscICs.logic.edgedetector", "miscIC:L: Edge detector");
@@ -161,12 +162,16 @@ public class RegistryHandler {
 				"miscIC:L: Odd qty active");
 		LanguageRegistry.instance().addStringLocalization("miscICs.logic.2of3",
 				"miscIC:L: 2 of 3 active");
+		
+		LanguageRegistry.instance().addStringLocalization(
+				"miscICs.logic.counter4017", "miscIC:L: Johnson 5-stage");
 	}
 
 	private static void RegisterRelayCircuits() {
 		FarmingRegistry.registerRedNetLogicCircuit(new MaxDTcircuit());
 		FarmingRegistry.registerRedNetLogicCircuit(new MinDTcircuit());
 		FarmingRegistry.registerRedNetLogicCircuit(new DiskCircuit());
+		FarmingRegistry.registerRedNetLogicCircuit(new StandbyController());
 
 		LanguageRegistry.instance().addStringLocalization(
 				"miscICs.relay.max_dt", "miscIC:R: Max Relay (DT)");
@@ -174,5 +179,7 @@ public class RegistryHandler {
 				"miscICs.relay.min_dt", "miscIC:R: Min Relay (DT)");
 		LanguageRegistry.instance().addStringLocalization(
 				"miscICs.relay.induction", "miscIC:R: Inv time relay");
+		LanguageRegistry.instance().addStringLocalization(
+				"miscICs.relay.standby_control", "miscIC:R:Stand-by controller");
 	}
 }
