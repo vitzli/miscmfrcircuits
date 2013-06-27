@@ -8,11 +8,12 @@ public class StandbyController implements IRedNetLogicCircuit {
 
 	private static final String[] inputPinNames = new String[] {"Mok", "Sok", "Td", "RST"};
 
-	private boolean mainOk = true;
-	private boolean sbyOk = true;
+	private boolean mainOk;
+	private boolean sbyOk;
 	private boolean reset = false;
-	private boolean state = false; // true when in stand-by mode
+	private boolean standbyMode = false; // true when in stand-by mode
 	private boolean alarm = false;
+	private boolean powerLoss = false;
 	private int timer = 0;
 	private int Td = 0;
 	
@@ -23,7 +24,7 @@ public class StandbyController implements IRedNetLogicCircuit {
 
 	@Override
 	public int getOutputCount() {
-		return 3;
+		return 4;
 	}
 
 	@Override
@@ -33,27 +34,46 @@ public class StandbyController implements IRedNetLogicCircuit {
 		Td = ValueFunctions.ConstraintInt(inputValues[2], 0, 255) * 20;
 		reset = inputValues[3] !=0 ? true : false;
 		
-		if ((!mainOk) && sbyOk && (!state) && (timer<=Td)) {
-			timer++;
-			alarm = true;
-		}
-		
-		if ((!mainOk) && (timer>Td) && (!state)) {
-			state = true;
-			alarm = false;
-			timer = 0;
-		}
-		
-		if (mainOk && state && reset) {
-			state = false;
-			alarm = false;
-		}
+		alarm = ! (mainOk && sbyOk);
 		
 		if ((!mainOk) && (!sbyOk)) {
-			alarm = true;
+				powerLoss = true;
+				standbyMode = false;
+				timer = Td;
+				return new int[] {0, 0, 15, 15};				
 		}
 		
-		return new int[] {state ? 15 : 0, state ? 0 : 15, alarm ? 15 : 0};
+		if (mainOk && (reset || powerLoss)) {
+			standbyMode = false;
+			timer = 0;
+			powerLoss = false;
+			return new int[] {0, 15, alarm ? 15 : 0, 0};
+		}
+		
+		if (sbyOk && powerLoss) {
+			powerLoss = false;
+			standbyMode = true;
+			timer = 0;
+			return new int[] {15, 0, alarm ? 15 : 0, 0};
+		}
+		
+		if (!mainOk && sbyOk && (!standbyMode)) {
+			timer++;
+			if (timer>Td) {
+				standbyMode = true;
+				timer = 0;
+			}
+		}
+		
+		if (mainOk && !sbyOk && standbyMode) {
+			timer++;
+			if (timer>Td) {
+				standbyMode = false;
+				timer = 0;
+			}
+		}
+			
+		return new int[] {standbyMode ? 15 : 0, standbyMode ? 0 : 15, alarm ? 15 : 0, powerLoss ? 15 : 0};
 	}
 
 	@Override
@@ -68,21 +88,19 @@ public class StandbyController implements IRedNetLogicCircuit {
 
 	@Override
 	public String getOutputPinLabel(int pin) {
-		return pin == 0 ? "ENS" : pin==1 ? "ENM" : "ALM";
+		return pin == 0 ? "EnS" : pin==1 ? "EnM" : pin==2 ? "ALM" : "ERR";
 	}
 
 	@Override
 	public void readFromNBT(NBTTagCompound tag) {
-		state = tag.getBoolean("state");
-		alarm = tag.getBoolean("alarm");
+		standbyMode = tag.getBoolean("state");
 		timer = tag.getInteger("timer");
 		
 	}
 
 	@Override
 	public void writeToNBT(NBTTagCompound tag) {
-		tag.setBoolean("state", state);
-		tag.setBoolean("alarm", alarm);
+		tag.setBoolean("state", standbyMode);
 		tag.setInteger("timer", timer);
 	}
 

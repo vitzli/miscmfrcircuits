@@ -23,36 +23,36 @@ import vitzli.miscmfrcircuits.handlers.RegistryHandler;
 @Mod(modid = MiscMFRcircuits.modID, name = MiscMFRcircuits.modName, version = MiscMFRcircuits.version, dependencies = "required-after:MineFactoryReloaded")
 @NetworkMod(clientSideRequired = true)
 public class MiscMFRcircuits {
-	public static final String modID = "MiscMFRcircuits";
-	public static final String modName = "Misc MFR circuits";
-	public static final String version = "0.0.0.4";
+    public static final String modID = "MiscMFRcircuits";
+    public static final String modName = "Misc MFR circuits";
+    public static final String version = "0.0.0.5";
 
-	@Instance(modID)
-	public static MiscMFRcircuits instance;
+    @Instance(modID)
+    public static MiscMFRcircuits instance;
 
-	public static Logger log = Logger.getLogger(MiscMFRcircuits.modID);
+    public static Logger log = Logger.getLogger(MiscMFRcircuits.modID);
 
-	@PreInit
-	public void preInit(FMLPreInitializationEvent event) {
-		log.setParent(FMLLog.getLogger());
-	}
+    @PreInit
+    public void preInit(FMLPreInitializationEvent event) {
+        log.setParent(FMLLog.getLogger());
+    }
 
-	@Init
-	public void Init(FMLInitializationEvent event) {
-		log.log(Level.INFO, "miscIC here. Registering all my circuits");
+    @Init
+    public void Init(FMLInitializationEvent event) {
+        log.log(Level.INFO, "miscIC here. Registering all my circuits");
 
-		try {
-			RegistryHandler.InitRedNetRegistry();
-		} catch (Exception x) {
-			log.log(Level.SEVERE,
-					"miscIC here. I cannot do my job and now I'm sad");
-			x.printStackTrace();
-		}
-	}
+        try {
+            RegistryHandler.InitRedNetRegistry();
+        } catch (Exception x) {
+            log.log(Level.SEVERE,
+                    "miscIC here. I cannot do my job and now I'm sad");
+            x.printStackTrace();
+        }
+    }
 
-	@PostInit
-	public void PostInit(FMLPostInitializationEvent event) {
+    @PostInit
+    public void PostInit(FMLPostInitializationEvent event) {
 
-	}
+    }
 
 }

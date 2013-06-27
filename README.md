@@ -1,5 +1,5 @@
 Some circuits for PRC
 
-Download here: https://www.dropbox.com/s/mdbgzwabb1mdumo/miscICs-0.0.0.4.zip
+Download here: https://www.dropbox.com/s/gykjnusuncwdbup/miscICs-0.0.0.5.zip
 
-Sample setup: http://imgur.com/a/X0oUk
+MinecraftForum topic: http://www.minecraftforum.net/topic/1854900-

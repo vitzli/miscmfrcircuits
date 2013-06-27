@@ -62,7 +62,7 @@ public class Johnson5stage implements IRedNetLogicCircuit {
 
 	@Override
 	public String getOutputPinLabel(int pin) {
-		return pin==10 ? "CO#" : "O"+pin;
+		return pin==10 ? "Q#" : "Q"+pin;
 	}
 
 	@Override
