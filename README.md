@@ -2,7 +2,7 @@ MiscMFRcircuits
 ===============
 
 MiscMFRcircuits is an addon for Minefactory Reloaded, it provides additional circuits for programmable rednet controller.
-Some useful circuits include h:m:s timer, full 32bit logic elements, DAC, ADC and bargraph. 
+Some useful circuits include hour/minute/second timer, full 32bit logic elements, DAC, ADC and bargraph. 
 
 Download
 --------
