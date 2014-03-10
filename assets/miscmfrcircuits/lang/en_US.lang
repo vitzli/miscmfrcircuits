@@ -1,0 +1,51 @@
+miscICs.analog.Adder8=miscIC:A: Adder (8 in)
+miscICs.analog.average=miscIC:A: Average
+miscICs.analog.QuadAdder2=miscIC:A: Quad Adder (4*2 in)
+miscICs.analog.looongtimer=miscIC:A: hr:min:s timer (is looong, analog)
+
+miscICs.decoder16.ADC=miscIC:LB: ADC
+miscICs.encoder16.DAC=miscIC:LB: DAC
+miscICs.decoder.bargraph=miscIC:LB: Bargraph
+miscICs.logicboolean.hysteresis=miscIC:LB: Hysteresis thres.
+
+miscICs.bus.and2=miscIC:B: AND2 (32bit bus)
+miscICs.bus.or2=miscIC:B: OR2 (32bit bus)
+miscICs.bus.xor2=miscIC:B: XOR2 (32bit bus)
+miscICs.bus.not=miscIC:B: NOT (32bit bus)
+miscICs.bus.bin2gray=miscIC:B: Bin2Gray (32bit bus)
+miscICs.bus.gr2bin=miscIC:B: Gray2Bin (32bit bus)
+
+miscICs.decoder32.2by16bit=miscIC:B: Dec 2*16bit(bus)
+miscICs.decoder32.4by8bit=miscIC:B: Dec 4*8bit(bus)
+miscICs.decoder32.8by4bit=miscIC:B: Dec 8*4bit(bus)
+
+miscICs.encoder32.2by16bit=miscIC:B: Enc 2*16bit
+miscICs.encoder32.4by8bit=miscIC:B: Enc 4*8bit
+miscICs.encoder32.8by4bit=miscIC:B: Enc 8*4bit
+
+miscICs.RAM.1W=miscIC:B: RAM 1W (32bit)
+miscICs.RAM.8W=miscIC:B: RAM 8W (32bit)
+miscICs.RAM.16W=miscIC:B: RAM 16W (32bit)
+
+miscICs.bus.vgarom=miscIC:B: CG ROM
+
+miscICs.logic.edgedetector=miscIC:L: Edge detector
+
+miscICs.logic.quad_and2=miscIC:L: Quad AND2 (discrete)
+miscICs.logic.quad_not=miscIC:L: Quad NOT (discrete)
+miscICs.logic.quad_or2=miscIC:L: Quad OR2 (discrete)
+miscICs.logic.quad_xor2=miscIC:L: Quad XOR2 (discrete)
+
+miscICs.logic.allthesame=miscIC:L: All the same
+miscICs.logic.even=miscIC:L: Even qty active
+miscICs.logic.threshold8=miscIC:L: At least N active
+miscICs.logic.nandonlyn=miscIC:L: N and only N
+miscICs.logic.odd=miscIC:L: Odd qty active
+miscICs.logic.2of3=miscIC:L: 2 of 3 active
+
+miscICs.logic.counter4017=miscIC:L: Johnson 5-stage
+
+miscICs.relay.max_dt=miscIC:R: Max Relay (DT)
+miscICs.relay.min_dt=miscIC:R: Min Relay (DT)
+miscICs.relay.induction=miscIC:R: Inv time relay
+miscICs.relay.standby_control=miscIC:R:Stand-by controller

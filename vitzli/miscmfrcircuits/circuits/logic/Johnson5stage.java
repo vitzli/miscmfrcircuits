@@ -5,7 +5,7 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 
 public class Johnson5stage implements IRedNetLogicCircuit {
 	
-	private int state = 0; // TODO: Save me in NBT
+	private int state = 0; 
 	private boolean currentCP0 = false;
 	private boolean currentCP1 = false;
 	private boolean lastCP0 = false;
