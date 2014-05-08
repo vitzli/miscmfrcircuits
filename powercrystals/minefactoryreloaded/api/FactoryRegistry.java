@@ -166,7 +166,7 @@ public class FactoryRegistry
 			if(registry != null)
 			{
 				Method reg = registry.getMethod("registerGrinderBlacklist", Class[].class);
-				reg.invoke(registry, (Object[])ungrindables);
+				reg.invoke(registry, new Object[] {ungrindables});
 			}
 		}
 		catch(Exception e)
@@ -203,7 +203,9 @@ public class FactoryRegistry
 	 * 
 	 * @param entityToBreed Entity this food will be used with.
 	 * @param food The item to use when breeding this entity.
+	 * @deprecated for EntityAnimal.isBreedingItem(ItemStack)
 	 */
+	@Deprecated
 	public static void registerBreederFood(Class<?> entityToBreed, ItemStack food)
 	{
 		try
