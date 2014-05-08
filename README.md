@@ -7,7 +7,9 @@ Some useful circuits include hour/minute/second timer, full 32bit logic elements
 Download
 --------
 
-v0.5.0 for 1.6.4 https://www.dropbox.com/s/ifd2d3b6lcvdmcu/miscmfrciruits-0.5.0-MFR2.7.3.zip
+v0.5.1 for Minecraft 1.6.4 and MFR 2.7.6 https://www.dropbox.com/s/5q4ke7rz4bxz7jf/miscmfrciruits-0.5.1-MFR2.7.6.zip
+
+v0.5.0 for Minecraft 1.6.4 and MFR 2.7.3 https://www.dropbox.com/s/ifd2d3b6lcvdmcu/miscmfrciruits-0.5.0-MFR2.7.3.zip
 
 v0.0.0.5 for 1.5.2 https://www.dropbox.com/s/gykjnusuncwdbup/miscICs-0.0.0.5.zip
 

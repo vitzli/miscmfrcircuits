@@ -23,7 +23,7 @@ import vitzli.miscmfrcircuits.handlers.RegistryHandler;
 public class MiscMFRcircuits {
     public static final String modID = "miscmfrcircuits";
     public static final String modName = "Misc MFR circuits";
-    public static final String version = "0.5.0";
+    public static final String version = "0.5.1";
 
     @Instance(value=modID)
     public static MiscMFRcircuits instance;
@@ -50,7 +50,7 @@ public class MiscMFRcircuits {
 
     @EventHandler
     public void PostInit(FMLPostInitializationEvent event) {
-    	// nop
+        // nop
     }
 
 }
