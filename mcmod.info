@@ -6,14 +6,16 @@
         "logoFile": "", 
         "updateUrl": "", 
         "credits": "powercrystals",
-        "version": "0.5.1", 
+        "version": "0.5.2", 
         "modid": "miscmfrcircuits", 
         "authors": [
             "vitzli"
         ], 
         "mcversion": "1.6.4", 
         "screenshots": [], 
-        "dependencies": [], 
-        "description": "misc ICs"
+        "dependencies": [
+            "MineFactoryReloaded"
+        ], 
+        "description": "Additional circuits for a programmable rednet controller"
     }
 ]

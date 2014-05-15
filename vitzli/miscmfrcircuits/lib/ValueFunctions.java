@@ -34,4 +34,22 @@ public class ValueFunctions {
 	public static boolean isSignalRising(int currentValue, int lastValue) {
 		return currentValue > lastValue;
 	}
+
+    public static boolean CheckADDOverflow(int op1, int op2) {
+        if (op2 < 0 && op2 != Integer.MIN_VALUE) {
+            return CheckSUBOverflow(op1, -op2);
+        } else {
+            return (~(op1 ^ op2) & (op1 ^ (op1 + op2))) < 0;
+        }
+    }
+
+    public static boolean CheckSUBOverflow(int op1, int op2) {
+        if (op2 < 0) {
+            return CheckADDOverflow(op1, -op2);
+        } else {
+            return ((op1 ^ op2) & (op1 ^ (op1 - op2))) < 0;
+        }
+    }
+
+	
 }

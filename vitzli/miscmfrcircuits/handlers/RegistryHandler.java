@@ -3,9 +3,7 @@ package vitzli.miscmfrcircuits.handlers;
 import java.io.IOException;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
-
 import powercrystals.minefactoryreloaded.api.FactoryRegistry;
-
 import vitzli.miscmfrcircuits.circuits.analog.*;
 import vitzli.miscmfrcircuits.circuits.bus.*;
 import vitzli.miscmfrcircuits.circuits.logic.*;
@@ -26,6 +24,10 @@ public class RegistryHandler {
 		FactoryRegistry.registerRedNetLogicCircuit(new Average());
 		FactoryRegistry.registerRedNetLogicCircuit(new QuadAdder2());
 		FactoryRegistry.registerRedNetLogicCircuit(new LongTimer());
+		FactoryRegistry.registerRedNetLogicCircuit(new Divide());
+		FactoryRegistry.registerRedNetLogicCircuit(new Constraint());
+		FactoryRegistry.registerRedNetLogicCircuit(new MulDiv());
+		FactoryRegistry.registerRedNetLogicCircuit(new Multiply());
 //		// -- analog
 //		LanguageRegistry.instance().addStringLocalization(
 //				"miscICs.analog.Adder8", "miscIC:A: Adder (8 in)");
