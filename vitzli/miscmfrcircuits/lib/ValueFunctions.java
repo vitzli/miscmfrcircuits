@@ -50,6 +50,6 @@ public class ValueFunctions {
             return ((op1 ^ op2) & (op1 ^ (op1 - op2))) < 0;
         }
     }
-
+    
 	
 }

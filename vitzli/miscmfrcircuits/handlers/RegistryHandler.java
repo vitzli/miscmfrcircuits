@@ -28,6 +28,9 @@ public class RegistryHandler {
 		FactoryRegistry.registerRedNetLogicCircuit(new Constraint());
 		FactoryRegistry.registerRedNetLogicCircuit(new MulDiv());
 		FactoryRegistry.registerRedNetLogicCircuit(new Multiply());
+		FactoryRegistry.registerRedNetLogicCircuit(new PIDController());
+		FactoryRegistry.registerRedNetLogicCircuit(new AbsSign());
+		
 //		// -- analog
 //		LanguageRegistry.instance().addStringLocalization(
 //				"miscICs.analog.Adder8", "miscIC:A: Adder (8 in)");
@@ -78,13 +81,19 @@ public class RegistryHandler {
 		FactoryRegistry.registerRedNetLogicCircuit(new AND2bus());
 		FactoryRegistry.registerRedNetLogicCircuit(new NOTbus());
 		FactoryRegistry.registerRedNetLogicCircuit(new OR2bus());
+		
 		FactoryRegistry.registerRedNetLogicCircuit(new XOR2bus());
+		FactoryRegistry.registerRedNetLogicCircuit(new NAND2bus());
+		FactoryRegistry.registerRedNetLogicCircuit(new NOR2bus());
+		FactoryRegistry.registerRedNetLogicCircuit(new XNOR2bus());
 
 		// RAM -- 3
 		FactoryRegistry.registerRedNetLogicCircuit(new RAM_1W());
 		FactoryRegistry.registerRedNetLogicCircuit(new RAM_8W());
 		FactoryRegistry.registerRedNetLogicCircuit(new RAM_16W());
 		FactoryRegistry.registerRedNetLogicCircuit(new VGAROM());
+		FactoryRegistry.registerRedNetLogicCircuit(new LShiftbus());
+		FactoryRegistry.registerRedNetLogicCircuit(new RShiftbus());
 
 //		LanguageRegistry.instance().addStringLocalization("miscICs.bus.and2",
 //				"miscIC:B: AND2 (32bit bus)");
