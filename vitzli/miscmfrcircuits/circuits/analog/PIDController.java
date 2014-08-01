@@ -55,7 +55,7 @@ public class PIDController implements IRedNetLogicCircuit {
 			}
 			derivative = (error - previous_error) / (double) dt;
 			output = ((double) Kp * (double) error
-					+ (double) Ki * ((double) integral)
+					+ (double) Ki * ((double) integral) / 10.0D
 					+ (double) Kd * derivative) / 100.0D;
 			outputInt = (int) output;
 			previous_error = error;

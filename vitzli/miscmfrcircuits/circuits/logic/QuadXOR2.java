@@ -3,7 +3,7 @@ package vitzli.miscmfrcircuits.circuits.logic;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
-public class QuadXOR2 extends StatelessCircuit implements IRedNetLogicCircuit {
+public class QuadXOR2 extends StatelessCircuit {
 
 	private String inputNames[] = new String[] { "A0", "B0", "A1", "B1", "A2",
 			"B2", "A3", "B3" };

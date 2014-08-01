@@ -4,7 +4,7 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
 
-public class NAndOnlyN extends StatelessCircuit implements IRedNetLogicCircuit {
+public class NAndOnlyN extends StatelessCircuit {
 	
 	private int threshold;
 	private int pinCount;

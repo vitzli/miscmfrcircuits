@@ -3,7 +3,7 @@ package vitzli.miscmfrcircuits.circuits.logic;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
-public class TwoOfThree extends StatelessCircuit implements IRedNetLogicCircuit {
+public class TwoOfThree extends StatelessCircuit {
 
 	private int pinCount;
 	

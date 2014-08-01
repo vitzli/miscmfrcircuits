@@ -4,7 +4,7 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
 
-public class Odd extends StatelessCircuit implements IRedNetLogicCircuit {
+public class Odd extends StatelessCircuit {
 
 	private int pinCount;
 	private int idx;

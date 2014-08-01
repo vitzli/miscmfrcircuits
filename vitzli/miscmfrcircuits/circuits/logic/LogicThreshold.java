@@ -11,8 +11,7 @@ import vitzli.miscmfrcircuits.lib.ValueFunctions;
  *	Result is logic 1 when more than THR inputs active
  */
 
-public class LogicThreshold extends StatelessCircuit implements
-		IRedNetLogicCircuit {
+public class LogicThreshold extends StatelessCircuit {
 
 	private int threshold, pinCount;
 	private int idx;

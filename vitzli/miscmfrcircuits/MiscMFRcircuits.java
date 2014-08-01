@@ -17,18 +17,15 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
 import vitzli.miscmfrcircuits.handlers.RegistryHandler;
+import vitzli.miscmfrcircuits.ref.Reference;
 
-@Mod(modid = MiscMFRcircuits.modID, name = MiscMFRcircuits.modName, version = MiscMFRcircuits.version, dependencies = "required-after:MineFactoryReloaded")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "required-after:MineFactoryReloaded")
 @NetworkMod(clientSideRequired = true)
 public class MiscMFRcircuits {
-    public static final String modID = "miscmfrcircuits";
-    public static final String modName = "Misc MFR circuits";
-    public static final String version = "0.5.2";
-
-    @Instance(value=modID)
+    @Instance(value=Reference.MOD_ID)
     public static MiscMFRcircuits instance;
 
-    public static Logger log = Logger.getLogger(MiscMFRcircuits.modID);
+    public static Logger log = Logger.getLogger(Reference.MOD_ID);
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {

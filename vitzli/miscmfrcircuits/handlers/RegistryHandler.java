@@ -30,6 +30,7 @@ public class RegistryHandler {
 		FactoryRegistry.registerRedNetLogicCircuit(new Multiply());
 		FactoryRegistry.registerRedNetLogicCircuit(new PIDController());
 		FactoryRegistry.registerRedNetLogicCircuit(new AbsSign());
+		FactoryRegistry.registerRedNetLogicCircuit(new WorldTick());
 		
 //		// -- analog
 //		LanguageRegistry.instance().addStringLocalization(

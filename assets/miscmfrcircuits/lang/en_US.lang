@@ -1,4 +1,5 @@
 miscICs.analog.Adder8=miscIC:A: Adder (8 in)
+miscICs.analog.AbsSign=miscIC:A: ABS
 miscICs.analog.average=miscIC:A: Average
 miscICs.analog.QuadAdder2=miscIC:A: Quad Adder (4*2 in)
 miscICs.analog.looongtimer=miscIC:A: hh:mm:ss timer
@@ -6,6 +7,8 @@ miscICs.analog.Constraint=miscIC:A: Value constraint
 miscICs.analog.Divide=miscIC:A: DIV (with remainder)
 miscICs.analog.MulDiv=miscIC:A: MULDIV (remainder)
 miscICs.analog.Multiply=miscIC:A: MUL (overflow)
+miscICs.analog.PID=miscIC:A: PID controller
+miscICs.analog.worldtick=miscIC:A: World tick
 
 miscICs.decoder16.ADC=miscIC:LB: ADC
 miscICs.encoder16.DAC=miscIC:LB: DAC
@@ -18,6 +21,11 @@ miscICs.bus.xor2=miscIC:B: XOR2 (32bit bus)
 miscICs.bus.not=miscIC:B: NOT (32bit bus)
 miscICs.bus.bin2gray=miscIC:B: Bin2Gray (32bit bus)
 miscICs.bus.gr2bin=miscIC:B: Gray2Bin (32bit bus)
+miscICs.bus.nand2=miscIC:B: NAND2 (32bit bus)
+miscICs.bus.nor2=miscIC:B: NOR2 (32bit bus)
+miscICs.bus.xnor2=miscIC:B: XNOR2 (32bit bus)
+miscICs.bus.rshift=miscIC:B: Right shift (32bit bus)
+miscICs.bus.lshift=miscIC:B: Left shift (32bit bus)
 
 miscICs.decoder32.2by16bit=miscIC:B: Dec 2*16bit(bus)
 miscICs.decoder32.4by8bit=miscIC:B: Dec 4*8bit(bus)

@@ -4,8 +4,7 @@ package vitzli.miscmfrcircuits.circuits.logic;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
-public class QuadNOT extends StatelessCircuit implements IRedNetLogicCircuit
-{
+public class QuadNOT extends StatelessCircuit {
 
     @Override
     public int getInputCount()

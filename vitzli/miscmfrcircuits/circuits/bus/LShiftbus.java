@@ -3,7 +3,7 @@ package vitzli.miscmfrcircuits.circuits.bus;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
-public class LShiftbus extends StatelessCircuit{
+public class LShiftbus extends StatelessCircuit {
 	@Override
 	public int getInputCount() {
 		return 2;

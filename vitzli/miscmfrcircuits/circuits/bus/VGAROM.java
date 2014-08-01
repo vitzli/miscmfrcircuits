@@ -2,10 +2,10 @@ package vitzli.miscmfrcircuits.circuits.bus;
 
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
-import vitzli.miscmfrcircuits.lib.Constants;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
+import vitzli.miscmfrcircuits.ref.Constants;
 
-public class VGAROM extends StatelessCircuit implements IRedNetLogicCircuit {
+public class VGAROM extends StatelessCircuit {
 
 	private int ascii_code = 0;
 	

@@ -1,9 +1,11 @@
-package vitzli.miscmfrcircuits.circuits.bus;
+package vitzli.miscmfrcircuits.circuits.analog;
 
-import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
-public class Gray2BinBus extends StatelessCircuit {
+public class WorldTick extends StatelessCircuit{
+
+	int Lo = 0, Hi = 0;
+
 	@Override
 	public int getInputCount() {
 		return 1;
@@ -11,30 +13,34 @@ public class Gray2BinBus extends StatelessCircuit {
 
 	@Override
 	public int getOutputCount() {
-		return 1;
+		return 2;
 	}
 
 	@Override
 	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
-		int result = inputValues[0] >>> 1;
-		for (int mask = result; mask != 0; mask = mask >> 1) {
-			result = result ^ mask;
+		if (inputValues[0]!=0) {
+			return new int[] {0, 0};
 		}
-		return new int[] { result };
+		
+		Hi = (int)(worldTime / (long) Integer.MAX_VALUE);
+		Lo = (int)(worldTime - (long )Hi * (long) Integer.MAX_VALUE);
+		
+		return new int[] {Lo, Hi};
 	}
 
 	@Override
 	public String getUnlocalizedName() {
-		return "miscICs.bus.gr2bin";
+		return "miscICs.analog.worldtick";
 	}
 
 	@Override
 	public String getInputPinLabel(int pin) {
-		return "Gry";
+		return "#EN";
 	}
 
 	@Override
 	public String getOutputPinLabel(int pin) {
-		return "Bin";
+		return pin==0 ? "Lo" : "Hi";
 	}
+
 }

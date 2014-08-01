@@ -5,7 +5,7 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 import vitzli.miscmfrcircuits.lib.ValueFunctions;
 
-public class AllTheSame extends StatelessCircuit implements IRedNetLogicCircuit {
+public class AllTheSame extends StatelessCircuit {
 	
 	private int pinCount;
 	private int usedPins;

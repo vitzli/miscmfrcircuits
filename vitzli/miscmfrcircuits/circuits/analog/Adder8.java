@@ -3,7 +3,7 @@ package vitzli.miscmfrcircuits.circuits.analog;
 import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 
-public class Adder8 extends StatelessCircuit implements IRedNetLogicCircuit {
+public class Adder8 extends StatelessCircuit {
 
 	@Override
 	public int getInputCount() {
