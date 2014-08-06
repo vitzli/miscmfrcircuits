@@ -6,12 +6,12 @@ import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 public class Adder8 extends StatelessCircuit {
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 8;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 1;
 	}
 

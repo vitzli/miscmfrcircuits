@@ -12,12 +12,12 @@ public class ThresholdDetector implements IRedNetLogicCircuit {
 	private int currentSignalValue = 0;
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 3;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 1;
 	}
 	
@@ -45,7 +45,7 @@ public class ThresholdDetector implements IRedNetLogicCircuit {
 
 	@Override
 	public String getUnlocalizedName() {
-		return "miscICs.logicboolean.hysteresis";
+		return "miscICs.decoder.hysteresis";
 	}
 
 	@Override

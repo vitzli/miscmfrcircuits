@@ -18,12 +18,12 @@ public class StandbyController implements IRedNetLogicCircuit {
 	private int Td = 0;
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 4;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 4;
 	}
 

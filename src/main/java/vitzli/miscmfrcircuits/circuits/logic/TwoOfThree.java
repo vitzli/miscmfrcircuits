@@ -8,12 +8,12 @@ public class TwoOfThree extends StatelessCircuit {
 	private int pinCount;
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 3;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 1;
 	}
 

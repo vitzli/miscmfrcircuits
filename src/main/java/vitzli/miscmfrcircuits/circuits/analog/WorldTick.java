@@ -7,12 +7,12 @@ public class WorldTick extends StatelessCircuit{
 	int Lo = 0, Hi = 0;
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 1;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 2;
 	}
 

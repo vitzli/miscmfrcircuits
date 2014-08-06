@@ -13,12 +13,12 @@ public class Johnson5stage implements IRedNetLogicCircuit {
 	private boolean memoryReset = false;
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 3;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 11;
 	}
 

@@ -17,12 +17,12 @@ public class LogicThreshold extends StatelessCircuit {
 	private int idx;
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 9;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 1;
 	}
 

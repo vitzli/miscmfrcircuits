@@ -8,13 +8,13 @@ public class QuadOR2 extends StatelessCircuit {
 
     private String inputNames[] = new String[] {"A0", "B0", "A1", "B1", "A2", "B2", "A3", "B3"};
     @Override
-    public int getInputCount()
+    public byte getInputCount()
     {
         return 8;
     }
     
     @Override
-    public int getOutputCount()
+    public byte getOutputCount()
     {
         return 4;
     }

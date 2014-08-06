@@ -7,12 +7,12 @@ import vitzli.miscmfrcircuits.lib.ValueFunctions;
 public class BarGraph extends StatelessCircuit {
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 2;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 12;
 	}
 

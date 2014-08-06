@@ -37,7 +37,6 @@ public class DiskCircuit implements IRedNetLogicCircuit {
 						if (this.state != State.TRIP) {
 							this.state = State.TRIP;
 							this.tripMoment = worldTime;
-//							System.out.println("IntegSum=" + integSum);
 							this.onTrip();
 						}
 					} else {
@@ -47,8 +46,6 @@ public class DiskCircuit implements IRedNetLogicCircuit {
 						}
 						this.cntCLK++;
 						integSum += ((float) signalValue / (float) Ki);
-//						System.out.println("signal =" + signalValue
-//								+ " / Sint = " + integSum);
 					}
 				} else {
 					this.state = State.IDLE;
@@ -69,12 +66,12 @@ public class DiskCircuit implements IRedNetLogicCircuit {
 			"ST#" };
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 6;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 4;
 	}
 

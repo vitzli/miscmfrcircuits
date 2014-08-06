@@ -25,12 +25,12 @@ public class MaxDTcircuit implements IRedNetLogicCircuit {
 	private RelayMax relay = new RelayMax("relay.max_dT");
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 4;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 4;
 	}
 

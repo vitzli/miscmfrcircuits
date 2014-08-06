@@ -23,12 +23,12 @@ public class RAMcircuit implements IRedNetLogicCircuit {
 	private boolean writeState, clockState, resetState;
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 5;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 1;
 	}
 

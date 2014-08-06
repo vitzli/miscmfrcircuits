@@ -7,13 +7,13 @@ import vitzli.miscmfrcircuits.circuits.base.StatelessCircuit;
 public class QuadNOT extends StatelessCircuit {
 
     @Override
-    public int getInputCount()
+    public byte getInputCount()
     {
         return 4;
     }
     
     @Override
-    public int getOutputCount()
+    public byte getOutputCount()
     {
         return 4;
     }

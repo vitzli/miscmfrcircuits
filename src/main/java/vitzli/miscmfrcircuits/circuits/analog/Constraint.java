@@ -8,12 +8,12 @@ public class Constraint extends StatelessCircuit {
     private static final String[] inputPinNames = new String[] { "I", "Imn", "Imx" };
 	
     @Override
-    public int getInputCount() {
+    public byte getInputCount() {
         return 3;
     }
 
     @Override
-    public int getOutputCount() {
+    public byte getOutputCount() {
         return 1;
     }
 

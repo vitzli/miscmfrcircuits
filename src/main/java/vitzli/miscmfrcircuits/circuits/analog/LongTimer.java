@@ -48,12 +48,12 @@ public class LongTimer implements IRedNetLogicCircuit {
     private boolean reset; // reset timer
 
     @Override
-    public int getInputCount() {
+    public byte getInputCount() {
         return 6;
     }
 
     @Override
-    public int getOutputCount() {
+    public byte getOutputCount() {
         return 4;
     }
 

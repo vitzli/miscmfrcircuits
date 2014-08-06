@@ -9,12 +9,12 @@ public class QuadXOR2 extends StatelessCircuit {
 			"B2", "A3", "B3" };
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 8;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 4;
 	}
 

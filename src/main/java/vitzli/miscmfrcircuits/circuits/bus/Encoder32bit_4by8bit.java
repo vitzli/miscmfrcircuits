@@ -7,12 +7,12 @@ import vitzli.miscmfrcircuits.lib.ValueFunctions;
 public class Encoder32bit_4by8bit extends StatelessCircuit {
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 4;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 1;
 	}
 

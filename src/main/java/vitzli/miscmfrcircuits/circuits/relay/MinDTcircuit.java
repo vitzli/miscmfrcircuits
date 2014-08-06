@@ -23,12 +23,12 @@ public class MinDTcircuit implements IRedNetLogicCircuit {
 	private RelayMin relay = new RelayMin("relay.min_dT");
 
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 4;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 4;
 	}
 

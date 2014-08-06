@@ -22,12 +22,12 @@ public class PIDController implements IRedNetLogicCircuit {
     
     
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 7;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 4;
 	}
 	

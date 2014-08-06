@@ -11,12 +11,12 @@ public class RAM_1W implements IRedNetLogicCircuit {
 	private String[] InputPinNames = new String[] {"D", "WR", "CLK"};
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 3;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 1;
 	}
 

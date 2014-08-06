@@ -10,12 +10,12 @@ public class Multiply extends StatelessCircuit {
 	private int[] outputArray = new int[2];
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 2;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 2;
 	}
 

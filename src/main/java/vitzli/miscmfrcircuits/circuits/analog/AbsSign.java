@@ -10,12 +10,12 @@ public class AbsSign extends StatelessCircuit {
 	private static final String[] outputPinNames = new String[] { "ABS", "SGN", "POS", "==0", "<>0", "NEG" };
 	
 	@Override
-	public int getInputCount() {
+	public byte getInputCount() {
 		return 1;
 	}
 
 	@Override
-	public int getOutputCount() {
+	public byte getOutputCount() {
 		return 6;
 	}
 
