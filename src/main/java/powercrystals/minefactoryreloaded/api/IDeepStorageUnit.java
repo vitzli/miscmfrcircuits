@@ -23,6 +23,7 @@ public interface IDeepStorageUnit
 	
 	/**
 	 * @return The maximum number of items the DSU can hold.
+	 * May change based on the current type stored.
 	 */
 	int getMaxStoredCount();
 }
