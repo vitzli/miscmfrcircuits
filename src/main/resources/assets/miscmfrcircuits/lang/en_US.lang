@@ -1,5 +1,5 @@
 miscICs.analog.adder8=mMc:A: Adder (8 in)
-miscICs.analog.absSign=mMc:A: ABS
+miscICs.analog.abssign=mMc:A: ABS
 miscICs.analog.average=mMc:A: Average
 miscICs.analog.quadadder2=mMc:A: Quad Adder (4*2 in)
 miscICs.analog.longtimer=mMc:A: hh:mm:ss timer

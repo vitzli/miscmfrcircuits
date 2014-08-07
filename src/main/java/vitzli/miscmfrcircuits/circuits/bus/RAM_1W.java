@@ -5,10 +5,11 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 
 public class RAM_1W implements IRedNetLogicCircuit {
 
-	private int memoryValue = 0;
+	private int memoryValue = 1;
 	private boolean writeState = false;
 	private boolean lastClockState = false;
-	private String[] InputPinNames = new String[] {"D", "WR", "CLK"};
+	private boolean clockState = false;
+	private static final String[] InputPinNames = new String[] {"D", "WR", "CLK"};
 	
 	@Override
 	public byte getInputCount() {
@@ -22,12 +23,13 @@ public class RAM_1W implements IRedNetLogicCircuit {
 
 	@Override
 	public int[] recalculateOutputValues(long worldTime, int[] inputValues) {
-		if (inputValues[1] != 0 && inputValues[2] != 0 && !this.lastClockState) {
-			this.memoryValue = inputValues[0];
+		writeState = inputValues[1] != 0;
+		clockState = inputValues[2] != 0;
+		if (!lastClockState && writeState && clockState) {
+			memoryValue = inputValues[0];
 		}
-		this.writeState = inputValues[1] !=0;
-		this.lastClockState = inputValues[2] !=0;
-		return new int[] {this.memoryValue};
+		lastClockState = clockState;
+		return new int[] {memoryValue, };
 	}
 
 	@Override
@@ -47,17 +49,17 @@ public class RAM_1W implements IRedNetLogicCircuit {
 
 	@Override
 	public void readFromNBT(NBTTagCompound tag) {
-		this.writeState = tag.getBoolean("writeState");
-		this.lastClockState = tag.getBoolean("lastClockState");
-		this.memoryValue = tag.getInteger("memoryValue");
+		writeState = tag.getBoolean("writeState");
+		lastClockState = tag.getBoolean("lastClockState");
+		memoryValue = tag.getInteger("memoryValue");
 
 	}
 
 	@Override
 	public void writeToNBT(NBTTagCompound tag) {
-		tag.setBoolean("writeState", this.writeState);
-		tag.setBoolean("lastClockState", this.lastClockState);
-		tag.setInteger("memoryValue", this.memoryValue);
+		tag.setBoolean("writeState", writeState);
+		tag.setBoolean("lastClockState", lastClockState);
+		tag.setInteger("memoryValue", memoryValue);
 	}
 
 }

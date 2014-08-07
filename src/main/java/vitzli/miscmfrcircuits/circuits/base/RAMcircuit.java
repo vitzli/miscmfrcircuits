@@ -41,7 +41,7 @@ public class RAMcircuit implements IRedNetLogicCircuit {
 		clockState = inputValues[3] != 0; // CLK
 		resetState = inputValues[4] != 0; // RST
 
-		if (!this.lastClockState && clockState) {
+		if (!lastClockState && clockState) {
 			if (resetState) {
 				RAM.reset();
 			} else if (writeState) {
@@ -49,7 +49,7 @@ public class RAMcircuit implements IRedNetLogicCircuit {
 			}
 		}
 
-		this.lastClockState = clockState;
+		lastClockState = clockState;
 		return new int[] { RAM.read(addr) };
 
 	}
