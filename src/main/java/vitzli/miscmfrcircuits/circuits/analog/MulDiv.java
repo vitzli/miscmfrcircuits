@@ -32,7 +32,7 @@ public class MulDiv extends StatelessCircuit {
 
     @Override
     public String getUnlocalizedName() {
-        return "miscICs.analog.MulDiv";
+        return "miscICs.analog.muldiv";
     }
 
     @Override

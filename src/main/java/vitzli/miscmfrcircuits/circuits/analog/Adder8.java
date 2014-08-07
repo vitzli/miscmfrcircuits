@@ -24,7 +24,7 @@ public class Adder8 extends StatelessCircuit {
 
 	@Override
 	public String getUnlocalizedName() {
-		return "miscICs.analog.Adder8";
+		return "miscICs.analog.adder8";
 	}
 
 	@Override

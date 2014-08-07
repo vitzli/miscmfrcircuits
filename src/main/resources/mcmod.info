@@ -6,12 +6,12 @@
         "logoFile": "", 
         "updateUrl": "", 
         "credits": "powercrystals",
-        "version": ${version}, 
+        "version": "${version}", 
         "modid": "miscmfrcircuits", 
         "authors": [
             "vitzli"
         ], 
-        "mcversion": ${mcversion}, 
+        "mcversion": "${mcversion}", 
         "screenshots": [], 
         "dependencies": [
             "MineFactoryReloaded"

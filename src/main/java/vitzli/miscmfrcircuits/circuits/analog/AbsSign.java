@@ -32,7 +32,7 @@ public class AbsSign extends StatelessCircuit {
 
 	@Override
 	public String getUnlocalizedName() {
-		return "miscICs.analog.AbsSign";
+		return "miscICs.analog.abssign";
 	}
 
 	@Override

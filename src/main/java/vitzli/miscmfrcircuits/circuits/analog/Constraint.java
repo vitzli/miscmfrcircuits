@@ -24,7 +24,7 @@ public class Constraint extends StatelessCircuit {
 
     @Override
     public String getUnlocalizedName() {
-        return "miscICs.analog.Constraint";
+        return "miscICs.analog.constraint";
     }
 
     @Override

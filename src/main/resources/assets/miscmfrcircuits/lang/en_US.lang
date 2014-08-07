@@ -1,63 +1,63 @@
-miscICs.analog.Adder8=miscIC:A: Adder (8 in)
-miscICs.analog.AbsSign=miscIC:A: ABS
-miscICs.analog.average=miscIC:A: Average
-miscICs.analog.QuadAdder2=miscIC:A: Quad Adder (4*2 in)
-miscICs.analog.looongtimer=miscIC:A: hh:mm:ss timer
-miscICs.analog.Constraint=miscIC:A: Value constraint
-miscICs.analog.Divide=miscIC:A: DIV (with remainder)
-miscICs.analog.MulDiv=miscIC:A: MULDIV (remainder)
-miscICs.analog.Multiply=miscIC:A: MUL (overflow)
-miscICs.analog.PID=miscIC:A: PID controller
-miscICs.analog.worldtick=miscIC:A: World tick
+miscICs.analog.adder8=mMc:A: Adder (8 in)
+miscICs.analog.absSign=mMc:A: ABS
+miscICs.analog.average=mMc:A: Average
+miscICs.analog.quadadder2=mMc:A: Quad Adder (4*2 in)
+miscICs.analog.longtimer=mMc:A: hh:mm:ss timer
+miscICs.analog.constraint=mMc:A: Value constraint
+miscICs.analog.divide=mMc:A: Divide (with remainder)
+miscICs.analog.muldiv=mMc:A: MULDIV (with remainder)
+miscICs.analog.multiply=mMc:A: Multiply (with overflow)
+miscICs.analog.PID=mMc:A: PID controller
+miscICs.analog.worldtick=mMc:A: World tick
 
-miscICs.decoder16.ADC=miscIC:LB: ADC
-miscICs.encoder16.DAC=miscIC:LB: DAC
-miscICs.decoder.bargraph=miscIC:LB: Bargraph
-miscICs.logicboolean.hysteresis=miscIC:LB: Hysteresis thres.
+miscICs.decoder16.ADC=mMc:LB: ADC
+miscICs.encoder16.DAC=mMc:LB: DAC
+miscICs.decoder.bargraph=mMc:LB: Bargraph
+miscICs.decoder.hysteresis=mMc:LB: Hysteresis thres.
 
-miscICs.bus.and2=miscIC:B: AND2 (32bit bus)
-miscICs.bus.or2=miscIC:B: OR2 (32bit bus)
-miscICs.bus.xor2=miscIC:B: XOR2 (32bit bus)
-miscICs.bus.not=miscIC:B: NOT (32bit bus)
-miscICs.bus.bin2gray=miscIC:B: Bin2Gray (32bit bus)
-miscICs.bus.gr2bin=miscIC:B: Gray2Bin (32bit bus)
-miscICs.bus.nand2=miscIC:B: NAND2 (32bit bus)
-miscICs.bus.nor2=miscIC:B: NOR2 (32bit bus)
-miscICs.bus.xnor2=miscIC:B: XNOR2 (32bit bus)
-miscICs.bus.rshift=miscIC:B: Right shift (32bit bus)
-miscICs.bus.lshift=miscIC:B: Left shift (32bit bus)
+miscICs.bus.and2=mMc:B: AND2 (32bit bus)
+miscICs.bus.or2=mMc:B: OR2 (32bit bus)
+miscICs.bus.xor2=mMc:B: XOR2 (32bit bus)
+miscICs.bus.not=mMc:B: NOT (32bit bus)
+miscICs.bus.bin2gray=mMc:B: bin2gray (32bit bus)
+miscICs.bus.gr2bin=mMc:B: gray2bin (32bit bus)
+miscICs.bus.nand2=mMc:B: NAND2 (32bit bus)
+miscICs.bus.nor2=mMc:B: NOR2 (32bit bus)
+miscICs.bus.xnor2=mMc:B: XNOR2 (32bit bus)
+miscICs.bus.rshift=mMc:B: right shift (32bit bus)
+miscICs.bus.lshift=mMc:B: left shift (32bit bus)
 
-miscICs.decoder32.2by16bit=miscIC:B: Dec 2*16bit(bus)
-miscICs.decoder32.4by8bit=miscIC:B: Dec 4*8bit(bus)
-miscICs.decoder32.8by4bit=miscIC:B: Dec 8*4bit(bus)
+miscICs.decoder32.2by16bit=mMc:B: Dec 2*16bit(bus)
+miscICs.decoder32.4by8bit=mMc:B: Dec 4*8bit(bus)
+miscICs.decoder32.8by4bit=mMc:B: Dec 8*4bit(bus)
 
-miscICs.encoder32.2by16bit=miscIC:B: Enc 2*16bit
-miscICs.encoder32.4by8bit=miscIC:B: Enc 4*8bit
-miscICs.encoder32.8by4bit=miscIC:B: Enc 8*4bit
+miscICs.encoder32.2by16bit=mMc:B: Enc 2*16bit
+miscICs.encoder32.4by8bit=mMc:B: Enc 4*8bit
+miscICs.encoder32.8by4bit=mMc:B: Enc 8*4bit
 
-miscICs.RAM.1W=miscIC:B: RAM 1W (32bit)
-miscICs.RAM.8W=miscIC:B: RAM 8W (32bit)
-miscICs.RAM.16W=miscIC:B: RAM 16W (32bit)
+miscICs.RAM.1W=mMc:B: RAM 1W (32bit)
+miscICs.RAM.8W=mMc:B: RAM 8W (32bit)
+miscICs.RAM.16W=mMc:B: RAM 16W (32bit)
 
-miscICs.bus.vgarom=miscIC:B: CG ROM
+miscICs.bus.vgarom=mMc:B: CG ROM
 
-miscICs.logic.edgedetector=miscIC:L: Edge detector
+miscICs.logic.edgedetector=mMc:L: Edge detector
 
-miscICs.logic.quad_and2=miscIC:L: Quad AND2 (discrete)
-miscICs.logic.quad_not=miscIC:L: Quad NOT (discrete)
-miscICs.logic.quad_or2=miscIC:L: Quad OR2 (discrete)
-miscICs.logic.quad_xor2=miscIC:L: Quad XOR2 (discrete)
+miscICs.logic.quad_and2=mMc:L: Quad AND2 (discrete)
+miscICs.logic.quad_not=mMc:L: Quad NOT (discrete)
+miscICs.logic.quad_or2=mMc:L: Quad OR2 (discrete)
+miscICs.logic.quad_xor2=mMc:L: Quad XOR2 (discrete)
 
-miscICs.logic.allthesame=miscIC:L: All the same
-miscICs.logic.even=miscIC:L: Even qty active
-miscICs.logic.threshold8=miscIC:L: At least N active
-miscICs.logic.nandonlyn=miscIC:L: N and only N
-miscICs.logic.odd=miscIC:L: Odd qty active
-miscICs.logic.2of3=miscIC:L: 2 of 3 active
+miscICs.logic.allthesame=mMc:L: All the same
+miscICs.logic.even=mMc:L: Even qty active
+miscICs.logic.threshold8=mMc:L: At least N active
+miscICs.logic.nandonlyn=mMc:L: N and only N
+miscICs.logic.odd=mMc:L: Odd qty active
+miscICs.logic.2of3=mMc:L: 2 of 3 active
 
-miscICs.logic.counter4017=miscIC:L: Johnson 5-stage
+miscICs.logic.counter4017=mMc:L: Johnson 5-stage (4017) counter
 
-miscICs.relay.max_dt=miscIC:R: Max Relay (DT)
-miscICs.relay.min_dt=miscIC:R: Min Relay (DT)
-miscICs.relay.induction=miscIC:R: Inv time relay
-miscICs.relay.standby_control=miscIC:R: Stand-by controller
+miscICs.relay.max_dt=mMc:R: Max Relay (DT)
+miscICs.relay.min_dt=mMc:R: Min Relay (DT)
+miscICs.relay.induction=mMc:R: Inv time relay
+miscICs.relay.standby_control=mMc:R: Stand-by controller

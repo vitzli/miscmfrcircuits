@@ -30,7 +30,7 @@ public class Divide extends StatelessCircuit {
 
 	@Override
 	public String getUnlocalizedName() {
-		return "miscICs.analog.Divide";
+		return "miscICs.analog.divide";
 	}
 
 	@Override

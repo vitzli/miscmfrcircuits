@@ -113,7 +113,7 @@ public class LongTimer implements IRedNetLogicCircuit {
 
     @Override
     public String getUnlocalizedName() {
-        return "miscICs.analog.looongtimer";
+        return "miscICs.analog.longtimer";
     }
 
     @Override

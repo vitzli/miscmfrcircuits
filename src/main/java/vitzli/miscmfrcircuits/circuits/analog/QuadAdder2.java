@@ -28,7 +28,7 @@ public class QuadAdder2 extends StatelessCircuit {
 
 	@Override
 	public String getUnlocalizedName() {
-		return "miscICs.analog.QuadAdder2";
+		return "miscICs.analog.quadadder2";
 	}
 
 	@Override

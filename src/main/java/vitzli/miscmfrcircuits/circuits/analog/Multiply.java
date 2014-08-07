@@ -30,7 +30,7 @@ public class Multiply extends StatelessCircuit {
 
 	@Override
 	public String getUnlocalizedName() {
-		return "miscICs.analog.Multiply";
+		return "miscICs.analog.multiply";
 	}
 
 	@Override
