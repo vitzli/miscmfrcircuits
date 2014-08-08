@@ -5,7 +5,7 @@ import powercrystals.minefactoryreloaded.api.rednet.IRedNetLogicCircuit;
 
 public class RAM_1W implements IRedNetLogicCircuit {
 
-	private int memoryValue = 1;
+	private int memoryValue = 0;
 	private boolean writeState = false;
 	private boolean lastClockState = false;
 	private boolean clockState = false;

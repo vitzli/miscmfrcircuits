@@ -17,14 +17,27 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.6.0"
+ext.configFile = file "build.properties"
+
+configFile.withReader {
+    def prop = new Properties()
+    prop.load(it)
+    project.ext.config = new ConfigSlurper().parse prop
+}
+
+
+version = config.mod_version
 group= "vitzli.miscmfrcircuits" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "miscMFRcircuits"
 
 minecraft {
-    version = "1.7.10-10.13.0.1197"
+    version = config.minecraft_version + "-" + config.forge_version
     assetDir = "eclipse/assets"
+    replaceIn "ref/Reference.java"
+    replace "@VERSION@", "${config.mod_version}"
 }
+
+version = "${config.minecraft_version}-${config.mod_version}"
 
 dependencies {
     // you may put jars on which you depend on in ./libs
@@ -45,7 +58,7 @@ dependencies {
 processResources
 {
     // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.version
+    inputs.property "version", config.mod_version
     inputs.property "mcversion", project.minecraft.version
 
     // replace stuff in mcmod.info, nothing else
@@ -53,7 +66,7 @@ processResources
         include 'mcmod.info'
                 
         // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+        expand 'version':config.mod_version, 'mcversion':project.minecraft.version
     }
         
     // copy everything else, thats not the mcmod.info
